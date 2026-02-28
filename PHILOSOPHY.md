@@ -97,6 +97,51 @@ These philosophical choices led to specific design decisions:
 
 **Logs as Primary Data:** Abstract principles lack context. "Practicality over perfection" means different things in different situations. Logs capture decisions with their full context—what situation you faced, what options you considered, what you chose, what you gave up. Principles are extracted FROM logs, not written in isolation. Context matters.
 
+## Domain Independence
+
+Brain is not a developer tool. It's a thinking tool.
+
+You are not one person doing one thing. You are multifaceted:
+- A developer during work hours
+- A writer in the evenings
+- An investor on weekends
+- A teacher to your team
+- A parent every day
+- A founder across multiple ventures
+
+Each role has its own values. Each project has its own constraints. Brain recognizes this complexity. It doesn't force you into "one personality." It lets you be your complete, multifaceted self.
+
+**Examples across domains:**
+
+**Developer:**
+- Role: Backend Developer
+- Projects: payment-service (critical stability), side-project (experimental learning)
+- Values shift: "Zero downtime" vs "Try new frameworks"
+
+**Writer:**
+- Role: Novelist
+- Projects: fantasy-series (imaginative), historical-fiction (researched)
+- Values shift: "Internal consistency of magic system" vs "Historical accuracy of events"
+
+**Investor:**
+- Role: Value Investor
+- Projects: retirement-portfolio (conservative), crypto-experiments (aggressive)
+- Values shift: "Proven assets with dividend growth" vs "High-risk learning opportunities"
+
+**Teacher:**
+- Role: Technical Instructor
+- Projects: beginner-bootcamp (fundamentals), advanced-seminar (depth)
+- Values shift: "Clarity and repetition" vs "Nuance and complexity"
+
+**Founder:**
+- Role: CEO
+- Projects: profitable-saas (sustain), new-venture (disrupt)
+- Values shift: "Incremental improvements" vs "Bold experimentation"
+
+The system is domain-agnostic. Whatever you decide about—code, stories, investments, teaching, parenting, business strategy—Brain helps you recognize and formalize your decision-making patterns.
+
+This is why Brain doesn't prescribe what "good" decisions look like. It learns what YOUR good decisions look like, in each context you operate in.
+
 ## What Brain Is
 
 Brain is a system for converting tacit knowledge to explicit knowledge through practice.

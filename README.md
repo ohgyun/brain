@@ -2,7 +2,9 @@
 
 **Teach Claude how you think**
 
-A Claude Code plugin that helps Claude make decisions the way you would—by learning your principles through conversation, not configuration.
+A tool for decision-making across all aspects of your life—by learning your principles through conversation, not configuration.
+
+Whether you're writing code, novels, investment strategies, or lesson plans, Brain helps Claude understand how YOU make decisions in each context.
 
 ## What is Brain?
 
@@ -11,17 +13,23 @@ Most of your decision-making principles are unconscious. You don't explicitly th
 Brain captures these patterns from your conversations and helps Claude learn how you think:
 
 **Different roles, different values**
-- As an Individual Contributor: "Deep work over meetings"
-- As a Manager: "Team consensus over quick decisions"
+- As a Developer: "Working code over perfect architecture"
+- As a Writer: "Show, don't tell"
+- As an Investor: "Compound growth over quick wins"
+- As a Manager: "Team growth over immediate results"
 
 **Different contexts, different priorities**
-- Personal project: "Try new things, learning matters"
-- Client work: "Proven solutions, reliability matters"
+- Production app: "Stability and proven patterns"
+- Hackathon project: "Speed and experimentation"
+- Fantasy novel: "World-building depth"
+- Historical novel: "Research accuracy"
+- Main portfolio: "Risk-managed diversification"
+- Experimental account: "Learning through trial"
 
 **Over time**
 - Your principles evolve as you grow
 - Brain analyzes recent patterns (not your entire history)
-- Focuses on who you are now
+- Focuses on who you are now, not who you were
 
 You don't configure values upfront. They emerge through practice, then Brain helps you recognize and formalize them.
 
@@ -88,13 +96,17 @@ Brain stores everything as simple markdown files in `~/.brain/`:
         └── YYYY-MM-DD_NNN.md  # Daily decision logs
 ```
 
-**Role** represents who you are in a conversation. For example: "Developer", "Manager", "Consultant". Each role has its own values.
+**Role** represents who you are in a conversation. For example: "Developer", "Writer", "Investor", "Teacher", "Parent". Each role has its own values.
 
-**Project** represents the context. For example: "client-work", "personal-experiments", "open-source". Each project has its own rules.
+**Project** represents the context. For example: "production-app", "hackathon", "fantasy-novel", "retirement-portfolio", "experimental-trading". Each project has its own rules.
 
 **Why both?** Because the same you makes different decisions in different contexts:
-- Developer + Personal project → "Experiment with new approaches"
-- Developer + Client work → "Use proven, stable solutions"
+- Developer + Production app → "Proven, stable solutions"
+- Developer + Hackathon → "Quick experiments, learn fast"
+- Writer + Fantasy novel → "Imaginative world-building"
+- Writer + Historical novel → "Research-driven accuracy"
+- Investor + Main portfolio → "Conservative, diversified"
+- Investor + Experimental account → "Aggressive, learn from mistakes"
 
 All files are plain markdown. Write in your native language. Start minimal—you can always expand later.
 
