@@ -1,7 +1,7 @@
 {
   "name": "brain",
   "version": "1.0.0",
-  "description": "Role-based decision making system for Claude",
+  "description": "Teach Claude how you think - Learn your decision-making principles through conversation, not configuration",
   "author": {
     "name": "ohgyun",
     "url": "https://github.com/ohgyun"

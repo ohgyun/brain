@@ -4,12 +4,12 @@
     "name": "ohgyun",
     "url": "https://github.com/ohgyun"
   },
-  "description": "Brain - Role-based decision making system for Claude",
+  "description": "Teach Claude how you think through conversation, not configuration",
   "plugins": [
     {
       "name": "brain",
       "source": "./plugins/brain",
-      "description": "Role-based decision making system that helps Claude make decisions aligned with your values and project rules",
+      "description": "A decision-making tool that learns your principles through practice across all aspects of life",
       "version": "1.0.0"
     }
   ]
