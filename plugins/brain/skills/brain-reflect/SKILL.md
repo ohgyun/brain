@@ -61,38 +61,33 @@ Save to: `~/.brain/logs/{project}/YYYY-MM-DD_NNN.md` (NNN: sequence number for t
 
 Confirm: "Session log saved to {filename}"
 
-### 5. Check for Pattern Analysis
-
-Determine if pattern analysis should be offered:
-
-**Check conditions:**
-- How many logs since last rules/values update?
-- Check last modification date of rules.md and values.md
-- Count logs created after that date
-
-**If < 3 logs since last update:**
-- Exit (not enough data for pattern analysis)
-
-**If ≥ 3 logs since last update:**
-- Proceed to step 6
-
-### 6. Analyze Patterns (Conditional)
+### 5. Analyze Patterns
 
 Read logs from `~/.brain/logs/{project}/`:
-- Scope: Logs since last rules/values modification
-- Extract from "What We Discovered This Session" section:
-  - Repeated principles
-  - New insights
-  - Candidates for values/rules
-- Analyze repetition frequency (prioritize 2+ occurrences)
 
-**If no patterns found:**
+**Scope: Last 15 logs** (or all if fewer)
+- Provides consistent, recent context window
+- Captures current decision-making patterns (not historical)
+- Your decision-making evolves over time—focus on who you are now
+
+**Extract patterns:**
+- From "What We Discovered This Session" section
+- Look for principles repeated 2+ times
+- Prioritize recent, consistent patterns
+
+**Filter duplicates:**
+- Compare candidates with existing rules.md and values.md
+- Obvious duplicates: auto-filtered
+- Similar items: presented for user decision
+- Only suggest genuinely new or evolved patterns
+
+**If no new patterns found:**
 - Exit silently
 
 **If patterns found:**
-- Proceed to step 7
+- Proceed to step 6
 
-### 7. Offer Pattern Update (Conditional)
+### 6. Offer Pattern Update (Conditional)
 
 Present findings to user:
 - "I've found repeated patterns in your recent decisions:"
@@ -106,9 +101,9 @@ Present findings to user:
 - Exit (will offer again next time)
 
 **If user accepts:**
-- Proceed to step 8
+- Proceed to step 7
 
-### 8. Prepare Update Suggestions
+### 7. Prepare Update Suggestions
 
 For each pattern candidate:
 
@@ -126,7 +121,7 @@ For each pattern candidate:
 - Only you can judge if two principles are truly the same
 - Obvious duplicates auto-detected, similarities require user decision
 
-### 9. User Selection and Approval
+### 8. User Selection and Approval
 
 Present all candidates with merge suggestions.
 
@@ -140,7 +135,7 @@ User selects which patterns to elevate:
 - You transform an unconscious habit into a deliberate principle
 - This moment strengthens self-awareness
 
-### 10. Update Files
+### 9. Update Files
 
 For approved patterns:
 - Update rules.md and/or values.md
@@ -152,7 +147,8 @@ Confirm: "Updated {role/project} with {N} new principles"
 
 ## Important Principles
 
-- **Log first, analyze conditionally**: Always save meaningful logs, but only analyze patterns when enough data accumulated
+- **Log first, analyze always**: Save meaningful logs, then check for patterns every time
+- **Recent context matters**: Analyzes last 15 logs—your decision-making evolves, focus on who you are now
 - **User confirmation required**: Never auto-modify files
   - This isn't just safety—it's a metacognitive process
   - When you approve a pattern, you're consciously recognizing your own thinking
@@ -169,7 +165,9 @@ Confirm: "Updated {role/project} with {N} new principles"
 [work on tasks]
 /brain-reflect  - End session
   → Log saved
-  → (Every ~3 sessions) "Patterns found, update?"
+  → Patterns analyzed (last 15 logs)
+  → If found: "Would you like to update?"
+  → If not: silently exits
 ```
 
 **You don't need to reflect every conversation:**
@@ -177,7 +175,8 @@ Confirm: "Updated {role/project} with {N} new principles"
 - AI will auto-skip if nothing to capture
 - No pressure to log everything
 
-**Pattern analysis is automatic:**
-- System tracks when to offer updates
-- You just approve or decline
+**Pattern discovery is continuous:**
+- Analyzes patterns every reflection
+- Offers updates only when new patterns found
 - Gradually evolves your values/rules
+- Recent patterns reflect current you
