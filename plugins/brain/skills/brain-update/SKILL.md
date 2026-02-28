@@ -1,41 +1,41 @@
-# Brain Update: 로그 기반 Rules/Values 업데이트
+# Brain Update: Log-based Rules/Values Update
 
-로그를 분석하여 반복되는 패턴을 발견하고, Project rules와 Role values로 승격시킵니다.
+Analyze logs to discover repeated patterns and elevate them to Project rules and Role values.
 
-## 실행 절차
+## Execution Steps
 
-1. **로그 범위 결정**
-   - rules.md, values.md 마지막 수정일 확인
-   - 기본: 마지막 수정일 이후 로그만 분석
-   - 사용자 선택: "최근 변경 이후" (기본) vs "전체 다시 분석"
+1. **Determine Log Scope**
+   - Check last modification date of rules.md and values.md
+   - Default: analyze only logs after last modification
+   - User choice: "Since last change" (default) vs "Re-analyze all"
 
-2. **로그 분석 및 패턴 식별**
-   - `~/.brain/logs/{project}/` 폴더에서 로그 읽기
-   - "이번 세션에서 발견한 것" 섹션에서 추출:
-     - 반복된 원칙
-     - 새로운 인사이트
-     - values/rules 후보
-   - 반복 빈도 분석 (2회 이상 우선 제시)
+2. **Log Analysis and Pattern Identification**
+   - Read logs from `~/.brain/logs/{project}/`
+   - Extract from "What We Discovered This Session" section:
+     - Repeated principles
+     - New insights
+     - Candidates for values/rules
+   - Analyze repetition frequency (prioritize 2+ occurrences)
 
-3. **유사 항목 감지**
-   - 기존 rules/values 파일 읽기
-   - 신규 후보와 기존 항목 비교
-   - 유사 항목 발견 시 통합 옵션 제시:
-     - 두 항목 유지
-     - 기존 항목에 추가/확장
-     - 신규 항목 무시
-     - 기존 항목 수정
+3. **Detect Similar Items**
+   - Read existing rules/values files
+   - Compare new candidates with existing items
+   - When similar items found, offer merge options:
+     - Keep both items
+     - Add/extend to existing item
+     - Ignore new candidate
+     - Modify existing item
 
-4. **승격 후보 제시 및 선택**
-   - 분석 결과 요약 (반복 횟수, 출처 로그 포함)
-   - 사용자가 승격할 항목 선택
+4. **Present and Select Elevation Candidates**
+   - Summarize analysis (include repetition count, source logs)
+   - User selects items to elevate
 
-5. **파일 업데이트**
-   - 선택된 항목을 rules.md, values.md에 반영
-   - 주석/메타데이터 추가하지 않음
+5. **Update Files**
+   - Reflect selected items in rules.md, values.md
+   - Do not add comments/metadata
 
-## 중요 원칙
+## Important Principles
 
-- **사용자 확인 필수**: 자동으로 파일 수정하지 않음
-- **보수적 통합**: 명백한 중복만 감지, 유사는 사용자 판단
-- **반복 우선**: 2회 이상 반복된 패턴 우선 제시
+- **User confirmation required**: Never auto-modify files
+- **Conservative merge**: Detect only obvious duplicates; user decides on similarities
+- **Prioritize repetition**: Present patterns repeated 2+ times first

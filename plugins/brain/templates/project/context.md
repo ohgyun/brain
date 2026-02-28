@@ -1,23 +1,23 @@
 # {Project Name} Context
 
-이 프로젝트의 배경과 현재 상황입니다.
+Background and current state of this project.
 
-> 필요한 섹션만 작성하세요. 모든 섹션이 선택적입니다.
-
----
-
-## 개요
-
-{프로젝트가 무엇인지, 왜 하는지}
+> Write only the sections you need. All sections are optional.
 
 ---
 
-## 현재 상황
+## Overview
 
-{지금 어느 단계인지, 무엇을 하고 있는지}
+{What this project is, why we're doing it}
 
 ---
 
-## 주요 제약
+## Current State
 
-{기술적/시간적/자원적 제약이 있다면}
+{What stage we're at, what we're working on}
+
+---
+
+## Key Constraints
+
+{Technical/time/resource constraints if any}

@@ -1,15 +1,15 @@
 ---
 name: brain-status
-description: 현재 세션에 적용된 Role과 Project를 확인합니다
+description: Check current Role and Project applied to the session
 user-invocable: true
 ---
 
-# Brain 상태 확인
+# Brain Status Check
 
-현재 세션에 적용된 컨텍스트를 확인합니다.
+Check the context applied to the current session.
 
-## 실행 절차
+## Execution Steps
 
-1. 현재 세션의 Role과 Project 확인 (Role은 여러 개 가능)
-2. 적용된 컨텍스트 요약 출력 (모든 Role 표시)
-3. 세션 시작 전이면 `/brain` 실행 안내
+1. Check current session's Role(s) and Project (multiple Roles possible)
+2. Output summary of applied context (show all Roles)
+3. If no session started yet, guide user to run `/brain`

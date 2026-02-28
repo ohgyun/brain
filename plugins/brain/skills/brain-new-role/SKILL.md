@@ -1,29 +1,29 @@
 ---
 name: brain-new-role
-description: 새로운 Role을 생성합니다
+description: Create a new Role
 user-invocable: true
 ---
 
-# Brain 새 Role 생성
+# Brain New Role Creation
 
-새로운 Role을 생성합니다.
+Create a new Role.
 
-## 실행 절차
+## Execution Steps
 
-1. 새 Role 이름 질문
-2. 적용 도메인 질문 (예: "코드, 아키텍처, 기술 의사결정")
-3. 핵심 가치 질문 (비워두기 가능)
-4. `~/.brain/roles/{role_name}/values.md` 생성
-5. 생성된 파일 확인
+1. Ask for new Role name
+2. Ask for application domain (e.g., "code, architecture, technical decisions")
+3. Ask for core values (can leave empty)
+4. Create `~/.brain/roles/{role_name}/values.md`
+5. Confirm created file
 
-## 파일 생성 규칙
+## File Creation Rules
 
-- 최소 구성만 생성 (제목 + 적용 도메인)
-- 플레이스홀더, 가이드 텍스트 제거
-- 사용자 입력 내용만 반영
-- 비워두기 선택 시 해당 섹션 제외
-- 나중에 `templates/role/values.md` 참고하여 확장
+- Create minimal structure only (title + application domain)
+- Remove placeholders and guide text
+- Reflect only user input
+- Exclude sections if user chooses to leave empty
+- Can expand later referring to `templates/role/values.md`
 
-## 인자 사용
+## Using Arguments
 
-`/brain-new-role {role_name}` 형태로 이름 직접 지정 가능.
+Name can be specified directly: `/brain-new-role {role_name}`

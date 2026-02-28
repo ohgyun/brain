@@ -1,21 +1,21 @@
 # {Project Name} Rules
 
-이 프로젝트에서 의사결정할 때 적용하는 규칙입니다.
+Rules applied when making decisions in this project.
 
-> 필요한 섹션만 작성하세요. 모든 섹션이 선택적입니다.
-
----
-
-## 우선순위
-
-1. **{항목}**
-   {왜 중요한지, 언제 적용되는지}
-
-2. **{항목}**
-   {설명}
+> Write only the sections you need. All sections are optional.
 
 ---
 
-## 제약/금지
+## Priorities
 
-- **{제약}**: {이유}
+1. **{Item}**
+   {Why it matters, when it applies}
+
+2. **{Item}**
+   {Description}
+
+---
+
+## Constraints/Prohibitions
+
+- **{Constraint}**: {Reason}

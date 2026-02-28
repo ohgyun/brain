@@ -1,40 +1,40 @@
 ---
 name: brain-log
-description: 현재 대화의 의미있는 부분을 요약하여 로그로 저장합니다
+description: Summarize and save meaningful parts of the current conversation as a log
 user-invocable: true
 ---
 
-# Brain 로그 저장
+# Brain Log Save
 
-현재 대화에서 의미있는 의사결정과 내용을 요약하여 로그로 저장합니다.
+Summarize meaningful decisions and insights from the current conversation and save as a log.
 
-## 실행 절차
+## Execution Steps
 
-1. 현재 세션의 Project 확인 (없으면 질문)
-2. 현재 세션의 Role 확인 (여러 개면 모두 기록)
-3. 대화 내용 분석, 의미있는 결정 추출
-4. `templates/log/session.md` 기반 로그 초안 작성
-5. AI 자체 검토
-   - 충분 → 자동 저장
-   - 부족 → 저장하지 않고 알림
+1. Check current session's Project (ask if not set)
+2. Check current session's Role(s) (record all if multiple)
+3. Analyze conversation, extract meaningful decisions
+4. Draft log based on `templates/log/session.md`
+5. AI Self-Review
+   - If sufficient → auto-save
+   - If insufficient → skip with notice
 
-## AI 자체 검토 기준
+## AI Self-Review Criteria
 
-다음 질문으로 평가:
-- 세션의 **핵심 인사이트**가 명확한가?
-- values/rules로 **발전 가능한 내용**이 있는가?
-- 다음 세션에서 이 로그만 읽어도 **본질 이해** 가능한가?
-- **중요한 것**이 드러나는가? (반복 패턴 또는 단일 발견)
+Evaluate with these questions:
+- Does it capture **core insights** from the session?
+- Is there content **worth evolving** into values/rules?
+- Can the next session **grasp the essence** from this log alone?
+- Does it **reveal what truly matters**? (repeated patterns or singular discoveries)
 
-부족한 경우: 단순 정보 질의, 루틴 작업, 새로운 발견 없음 → 로그 생략
+Skip if: simple Q&A, routine tasks, no meaningful discoveries → omit log
 
-## 로그 위치
+## Log Location
 
-`~/.brain/logs/{project}/YYYY-MM-DD_NNN.md` (NNN: 해당 날짜 순번)
+`~/.brain/logs/{project}/YYYY-MM-DD_NNN.md` (NNN: sequence number for the date)
 
-## 템플릿
+## Template
 
-`templates/log/session.md` 사용. "이번 세션에서 발견한 것" 섹션 중점 작성:
-- 반복된 원칙
-- 새로운 인사이트
-- values/rules 후보
+Use `templates/log/session.md`. Focus on "What We Discovered This Session" section:
+- Repeated principles
+- New insights
+- Candidates for values/rules

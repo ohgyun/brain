@@ -1,31 +1,31 @@
 ---
 name: brain-new-project
-description: 새로운 Project를 생성합니다
+description: Create a new Project
 user-invocable: true
 ---
 
-# Brain 새 Project 생성
+# Brain New Project Creation
 
-새로운 Project를 생성합니다.
+Create a new Project.
 
-## 실행 절차
+## Execution Steps
 
-1. 새 Project 이름 질문
-2. 프로젝트 개요 질문 (비워두기 가능)
-3. 주요 규칙 질문 (비워두기 가능)
-4. 새 Project 폴더 생성:
+1. Ask for new Project name
+2. Ask for project overview (can leave empty)
+3. Ask for key rules (can leave empty)
+4. Create new Project folder:
    - `~/.brain/projects/{project_name}/rules.md`
    - `~/.brain/projects/{project_name}/context.md`
-5. 생성된 파일 확인
+5. Confirm created files
 
-## 파일 생성 규칙
+## File Creation Rules
 
-- 최소 구성만 생성 (제목만)
-- 플레이스홀더, 가이드 텍스트 제거
-- 사용자 입력 내용만 반영
-- 비워두기 선택 시 해당 섹션 제외
-- 나중에 `templates/project/` 참고하여 확장
+- Create minimal structure only (title only)
+- Remove placeholders and guide text
+- Reflect only user input
+- Exclude sections if user chooses to leave empty
+- Can expand later referring to `templates/project/`
 
-## 인자 사용
+## Using Arguments
 
-`/brain-new-project {project_name}` 형태로 이름 직접 지정 가능.
+Name can be specified directly: `/brain-new-project {project_name}`

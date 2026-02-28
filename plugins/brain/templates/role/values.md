@@ -1,21 +1,21 @@
 # {Role Name} Values
 
-적용 도메인: {이 Role의 원칙이 적용되는 영역}
+Application Domain: {Areas where this Role's principles apply}
 
-> 필요한 섹션만 작성하세요. 모든 섹션이 선택적입니다.
-
----
-
-## 핵심 가치
-
-1. **{가치 이름}**
-   {무엇인지, 왜 중요한지 자유롭게 서술}
-
-2. **{가치 이름}**
-   {서술}
+> Write only the sections you need. All sections are optional.
 
 ---
 
-## 안티 패턴
+## Core Values
 
-- **{피해야 할 패턴}**: {이유}
+1. **{Value Name}**
+   {What it is, why it matters - describe freely}
+
+2. **{Value Name}**
+   {Description}
+
+---
+
+## Anti-Patterns
+
+- **{Pattern to Avoid}**: {Reason}

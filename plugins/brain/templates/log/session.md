@@ -1,53 +1,53 @@
 ---
-세션ID: {YYYY-MM-DD_NNN}
-프로젝트: {project_name}
-Role: {role_names (여러 개 가능, 쉼표로 구분)}
-날짜: {YYYY-MM-DD}
-요약태그: []
+SessionID: {YYYY-MM-DD_NNN}
+Project: {project_name}
+Role: {role_names (multiple possible, comma-separated)}
+Date: {YYYY-MM-DD}
+Tags: []
 ---
 
-# 세션 로그
+# Session Log
 
-> 필요한 섹션만 작성하세요. 모든 섹션이 선택적입니다.
-
----
-
-## 세션 개요
-
-{이 세션에서 무엇을 했는지, 왜 했는지}
+> Write only the sections you need. All sections are optional.
 
 ---
 
-## 결정 목록
+## Session Overview
 
-### 결정 1: {결정 제목}
-
-**상황**
-{무엇을 결정해야 했나}
-
-**선택지**
-{고려한 옵션들}
-
-**선택**
-{최종 선택과 이유}
-
-**트레이드오프**
-{포기한 것, 불안 요소}
+{What was done in this session and why}
 
 ---
 
-### 결정 2: {제목}
+## Decision List
+
+### Decision 1: {Decision Title}
+
+**Situation**
+{What needed to be decided}
+
+**Options**
+{Options considered}
+
+**Choice**
+{Final choice and reasoning}
+
+**Trade-offs**
+{What was given up, concerns}
+
+---
+
+### Decision 2: {Title}
 ...
 
 ---
 
-## 이번 세션에서 발견한 것
+## What We Discovered This Session
 
-**반복된 원칙:**
-{여러 결정에서 반복된 패턴이나 원칙}
+**Repeated Principles:**
+{Patterns or principles repeated across multiple decisions}
 
-**새로운 인사이트:**
-{처음 깨달은 중요한 것}
+**New Insights:**
+{Important things realized for the first time}
 
-**values/rules 후보:**
-{Role values나 Project rules로 승격할 만한 내용}
+**Candidates for values/rules:**
+{Content worth elevating to Role values or Project rules}
