@@ -1,131 +1,131 @@
 # Brain - Role-based Decision Making System
 
-Claude가 당신의 가치관과 프로젝트 규칙에 맞춰 일관된 결정을 내릴 수 있도록 돕는 의사결정 시스템입니다.
+A decision-making system that helps Claude make consistent decisions aligned with your values and project-specific rules.
 
-## 핵심 기능
+## Core Features
 
-- **Role**: 당신의 핵심 가치와 원칙을 정의 (예: Developer, Product Manager, Founder)
-- **Project**: 프로젝트별 구체적인 규칙과 컨텍스트 저장
-- **Log**: 의사결정 기록을 통한 패턴 발견 및 시스템 진화
+- **Role**: Define your core values and principles (e.g., Developer, Product Manager, Founder)
+- **Project**: Store project-specific rules and context
+- **Log**: Discover patterns from decision history and evolve the system
 
-## 빠른 시작
+## Quick Start
 
-### 1. 플러그인 설치
+### 1. Install Plugin
 
 ```bash
-# 마켓플레이스 추가
+# Add marketplace
 claude plugin marketplace add ohgyun/brain
 
-# 플러그인 설치
+# Install plugin
 claude plugin install brain
 ```
 
-### 2. 첫 세션 시작
+### 2. Start Your First Session
 
 ```bash
-# Claude Code 실행
+# Launch Claude Code
 claude
 
-# Brain 세션 시작
+# Start Brain session
 /brain
 ```
 
-처음 실행 시 Role과 Project를 생성하라는 안내가 나옵니다. `/brain-new-role`, `/brain-new-project` 명령으로 생성할 수 있습니다.
+On first run, you'll be guided to create a Role and Project using `/brain-new-role` and `/brain-new-project` commands.
 
-모든 데이터는 `~/.brain/` 디렉토리에 마크다운 파일로 저장됩니다.
+All data is stored as markdown files in the `~/.brain/` directory.
 
-## 주요 명령어
+## Key Commands
 
-| 명령 | 설명 |
-|-----|------|
-| `/brain` | 세션 시작 - Role과 Project 선택 |
-| `/brain-status` | 현재 적용된 Role/Project 확인 |
-| `/brain-log` | 현재 대화를 로그로 저장 |
-| `/brain-update` | 로그 분석 후 rules/values 업데이트 제안 |
-| `/brain-new-role` | 새 Role 생성 |
-| `/brain-new-project` | 새 Project 생성 |
+| Command | Description |
+|---------|-------------|
+| `/brain` | Start session - Select Role and Project |
+| `/brain-status` | Check current Role/Project |
+| `/brain-log` | Save current conversation as log |
+| `/brain-update` | Analyze logs and suggest rules/values updates |
+| `/brain-new-role` | Create new Role |
+| `/brain-new-project` | Create new Project |
 
-## 작동 방식
+## How It Works
 
 ```
-1. Role과 Project 선택
+1. Select Role and Project
    ↓
-2. values/rules가 Claude 컨텍스트에 로드
+2. values/rules loaded into Claude's context
    ↓
-3. Claude가 이를 기반으로 결정 내림
+3. Claude makes decisions based on them
    ↓
-4. 의미있는 결정을 로그로 기록 (/brain-log)
+4. Record meaningful decisions as logs (/brain-log)
    ↓
-5. 로그에서 패턴 발견 후 rules/values 진화 (/brain-update)
+5. Discover patterns and evolve rules/values (/brain-update)
 ```
 
-## 데이터 구조
+## Data Structure
 
-모든 데이터는 `~/.brain/`에 저장됩니다:
+All data is stored in `~/.brain/`:
 
 ```
 ~/.brain/
-├── roles/              # Role 정의
+├── roles/              # Role definitions
 │   └── {role}/
-│       └── values.md   # 핵심 가치, 원칙
+│       └── values.md   # Core values and principles
 │
-├── projects/           # Project 정의
+├── projects/           # Project definitions
 │   └── {project}/
-│       ├── rules.md    # 의사결정 규칙
-│       └── context.md  # 프로젝트 배경
+│       ├── rules.md    # Decision-making rules
+│       └── context.md  # Project background
 │
-└── logs/               # 세션 로그
+└── logs/               # Session logs
     └── {project}/
         └── YYYY-MM-DD_NNN.md
 ```
 
 ### Role vs Project
 
-| 레이어 | 의미 | 예시 |
-|--------|------|------|
-| **Role** | "나는 누구인가" | Developer: "실용성 > 완벽성" |
-| **Project** | "이 상황에서 어떻게 하는가" | Brain 프로젝트: "작성 부담 최소화" |
+| Layer | Meaning | Example |
+|-------|---------|---------|
+| **Role** | "Who I am" | Developer: "Practicality over perfection" |
+| **Project** | "How I act in this context" | Brain project: "Minimize writing burden" |
 
-## GitHub 백업 (선택사항)
+## GitHub Backup (Optional)
 
-`~/.brain/` 데이터를 GitHub에 백업하고 싶다면:
+To backup your `~/.brain/` data to GitHub:
 
 ```bash
-# ~/.brain 디렉토리로 이동
+# Navigate to ~/.brain directory
 cd ~/.brain
 
-# Git 저장소 초기화
+# Initialize Git repository
 git init
 git add .
 git commit -m "Initial brain data"
 
-# GitHub 리포지토리 생성 후 연결
+# Create GitHub repository and connect
 git remote add origin git@github.com:yourusername/brain-data.git
 git push -u origin main
 ```
 
-**템플릿 리포지토리:** [brain-data](https://github.com/ohgyun/brain-data) - 참고용 예시입니다.
+**Template repository:** [brain-data](https://github.com/ohgyun/brain-data) - Reference example.
 
-## 개발
+## Development
 
-### 로컬 테스트
+### Local Testing
 
 ```bash
-# 플러그인 디렉토리에서 직접 실행
+# Run directly from plugin directory
 cd /path/to/brain
 claude --plugin-dir .
 ```
 
-### 검증
+### Validation
 
 ```bash
-# 플러그인 검증
+# Validate plugin
 claude plugin validate plugins/brain/.claude-plugin/plugin.json
 
-# 마켓플레이스 검증
+# Validate marketplace
 claude plugin validate .claude-plugin/marketplace.json
 ```
 
-## 라이선스
+## License
 
 MIT
