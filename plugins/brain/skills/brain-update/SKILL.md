@@ -38,5 +38,13 @@ Analyze logs to discover repeated patterns and elevate them to Project rules and
 ## Important Principles
 
 - **User confirmation required**: Never auto-modify files
+  - This isn't just safety—it's a metacognitive process
+  - When you approve a pattern, you're consciously recognizing your own thinking
+  - You transform an unconscious habit into a deliberate principle
+
 - **Conservative merge**: Detect only obvious duplicates; user decides on similarities
+  - "Ship fast" vs "Ship working code fast" may seem similar but could be different
+  - Only you can judge if two principles are truly the same
+
 - **Prioritize repetition**: Present patterns repeated 2+ times first
+  - Repeated patterns are more likely to be genuine principles

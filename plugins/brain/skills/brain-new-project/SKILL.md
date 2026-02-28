@@ -8,6 +8,9 @@ user-invocable: true
 
 Create a new Project.
 
+**Philosophy**: Start with minimal context. Your project's rules and priorities
+will become clearer as you work, and can be refined over time.
+
 ## Execution Steps
 
 1. Ask for new Project name

@@ -6,7 +6,10 @@ user-invocable: true
 
 # Brain Session Start
 
-Select Role and Project to load context.
+Select Role and Project to load your decision-making context into Claude.
+
+This teaches Claude how YOU think in this specific context—not generic advice,
+but decisions aligned with your values and this project's constraints.
 
 ## Execution Steps
 

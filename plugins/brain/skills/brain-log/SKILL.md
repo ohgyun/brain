@@ -22,8 +22,12 @@ Summarize meaningful decisions and insights from the current conversation and sa
 
 ## AI Self-Review Criteria
 
+Brain's philosophy: Principles emerge through decisions, not introspection.
+Only log sessions where meaningful decisions revealed unconscious principles.
+
 Evaluate with these questions:
 - Does it capture **core insights** from the session?
+- Did decisions reveal **unconscious principles** worth making explicit?
 - Is there content **worth evolving** into values/rules?
 - Can the next session **grasp the essence** from this log alone?
 - Does it **reveal what truly matters**? (repeated patterns or singular discoveries)

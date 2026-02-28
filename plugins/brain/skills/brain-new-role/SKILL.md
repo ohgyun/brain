@@ -8,6 +8,9 @@ user-invocable: true
 
 Create a new Role.
 
+**Philosophy**: You don't need to know all your values upfront. Start minimal—
+your principles will emerge through conversations and can be discovered later.
+
 ## Execution Steps
 
 1. Ask for new Role name
