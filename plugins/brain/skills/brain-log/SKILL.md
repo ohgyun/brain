@@ -14,6 +14,8 @@ Summarize meaningful decisions and insights from the current conversation and sa
 2. Check current session's Role(s) (record all if multiple)
 3. Analyze conversation, extract meaningful decisions
 4. Draft log based on `templates/log/session.md`
+   - **Write in the same language as the current conversation**
+   - This preserves natural context and authentic expression
 5. AI Self-Review
    - If sufficient → auto-save
    - If insufficient → skip with notice

@@ -32,6 +32,7 @@ Analyze logs to discover repeated patterns and elevate them to Project rules and
 
 5. **Update Files**
    - Reflect selected items in rules.md, values.md
+   - **Preserve the language from source logs**
    - Do not add comments/metadata
 
 ## Important Principles

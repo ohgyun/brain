@@ -19,6 +19,7 @@ Create a new Role.
 ## File Creation Rules
 
 - Create minimal structure only (title + application domain)
+- **Write in the same language as the current conversation**
 - Remove placeholders and guide text
 - Reflect only user input
 - Exclude sections if user chooses to leave empty
