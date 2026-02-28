@@ -1,247 +1,112 @@
-# Brain: Background & Philosophy
+# Brain Philosophy
 
-## The Core Insight
+## Core Assumptions
 
-**People don't make decisions the same way in every context.**
+When I designed Brain, I started with a few observations about how people make decisions.
 
-The same person will make different decisions depending on their role and situation:
+First, I assumed that when someone makes a decision, they're guided by their core values and fundamental principles—whether they're consciously aware of them or not. These aren't arbitrary preferences; they're deep-seated beliefs about what matters.
 
-- As an **employee**, you consult with the team before acting
-- As a **founder**, you ship first and iterate based on feedback
-- As a **developer**, you prioritize working code over perfect architecture
-- As a **designer**, you prioritize user experience over implementation speed
+Second, I noticed that these values and principles vary depending on the role someone is playing. You might hold the same fundamental beliefs, but apply them differently when you're an individual contributor versus when you're a leader. As a developer, you might prioritize pragmatism. As a founder, you might prioritize speed. It's not inconsistency—it's context-appropriate decision-making.
 
-This isn't inconsistency—it's **context-appropriate decision-making**.
+Third, I realized that even within the same role, the situation matters. You make different decisions on personal projects versus client work, on prototypes versus production systems. The role defines your values, but the project defines your constraints and priorities.
 
-Brain is built on the recognition that you are not one person with one decision-making framework. You are multiple roles, each with its own values, constraints, and priorities.
+That's why Brain has two layers: **Role** (who you are) and **Project** (what matters here).
 
-## The Problem: Tacit Knowledge
+## The Problem of Tacit Knowledge
 
-Most of your decision-making principles are **unconscious**.
+Here's the challenge: most of your decision-making principles are tacit knowledge.
 
-You don't think "I'm applying my pragmatist principle now." You just naturally choose to ship with basic tests instead of comprehensive coverage. The principle emerges through your actions.
+You don't consciously think "I'm applying my pragmatist principle now." You just naturally choose to ship with basic tests instead of comprehensive coverage. The principle exists in your actions, not in your explicit awareness.
 
-**Traditional approach:**
-1. Sit down and write your principles
-2. Hope you remember them all
-3. Try to be consistent
+This creates a dilemma. Traditional systems ask you to articulate your values upfront. But that's asking you to make explicit what is inherently tacit. It's difficult, burdensome, and often incomplete.
 
-**The problem:**
-- You might not be aware of all your principles
-- Forcing upfront articulation feels burdensome
-- Principles evolve with experience
+More importantly, forcing upfront articulation misses a crucial insight: **your principles reveal themselves most clearly through your actual decisions, not through introspection.**
 
-## Brain's Approach: Discovery Through Dialogue
+When you choose option A over option B, there's a value judgment embedded in that choice. When you make similar choices repeatedly, there's a pattern. That pattern is your principle—whether you've named it or not.
 
-Brain assumes your principles **reveal themselves naturally in conversation**.
+## Discovery Through Dialogue
 
-### The Flow
+This led to Brain's core approach: instead of asking users to declare their principles upfront, help them discover principles through practice.
 
-```
-1. You have conversations with Claude
-   └─ Decisions emerge naturally
-      "No, let's ship with basic tests first"
+The mechanism is conversations. Every conversation where you make decisions contains your principles in action. When you say "No, let's ship with basic tests first," you're revealing something about what you value.
 
-2. /brain-log captures the session
-   └─ What you decided and why
+Brain captures these decisions in logs. Over time, patterns accumulate. Then it analyzes these patterns and says: "You've prioritized shipping over perfection three times in similar situations. Is this a principle worth making explicit?"
 
-3. /brain-update analyzes patterns
-   └─ "You've prioritized shipping over perfection 3 times"
+This follows a natural learning process:
+1. You act based on unconscious principles
+2. Patterns emerge through repeated actions
+3. You recognize the patterns
+4. You make them conscious and explicit
+5. You apply them deliberately in future decisions
 
-4. You review and approve
-   └─ "Yes, that IS my principle as a Developer"
+In knowledge management theory, this is called the SECI model—converting tacit knowledge to explicit knowledge through practice and reflection. Brain systematizes this process.
 
-5. Principle becomes explicit
-   └─ Added to Developer role's values
+## The Role of User Approval
 
-6. Claude applies it next time
-   └─ Makes decisions the way YOU would
-```
+Brain never auto-updates your values or rules. Every pattern that gets elevated to a principle requires your approval.
 
-### From Tacit to Explicit
+This isn't just a safety mechanism. It's a metacognitive process.
 
-This is a **knowledge conversion process**:
+When Brain presents a pattern and asks "Is this your principle?", you're forced to examine your own thinking. You recognize the pattern consciously. You decide whether it truly reflects who you want to be. You take ownership of it explicitly.
 
-- **Tacit knowledge**: The unconscious principles guiding your decisions
-- **Socialization**: Principles emerge through dialogue with Claude
-- **Externalization**: Patterns captured in logs
-- **Combination**: Patterns elevated to formal rules/values
-- **Internalization**: Claude applies these rules in future decisions
+This moment of conscious recognition is valuable in itself. It's not just about storing a preference in a system—it's about strengthening your self-awareness. You're transforming an unconscious habit into a deliberate principle.
 
-Brain doesn't ask you to know yourself perfectly upfront. It helps you **discover yourself through practice**.
+## Evolution Over Configuration
 
-## Layers of Context
+People change. The developer you are today isn't the developer you were a year ago. Your principles evolve with experience.
 
-Brain recognizes two layers of decision-making context:
+Most systems treat preferences as static configuration: set it once, done. But that doesn't match reality.
 
-### Role: "Who am I in this conversation?"
+Brain is designed to evolve:
+- Start with minimal principles (or none)
+- Capture decisions over time
+- Discover patterns
+- Elevate patterns to principles
+- Continue capturing new decisions
+- Discover new patterns
+- Refine existing principles
+- Repeat
 
-**Definition:** The identity and responsibilities you're assuming
+The system grows as you grow. It reflects your current thinking, not your past assumptions.
 
-**Examples:**
-- Developer: "Ship working code over perfect design"
-- Founder: "Speed over consensus"
-- Product Manager: "User value over technical elegance"
+This makes Brain less like a configuration file and more like a living system that evolves with you.
 
-**Key insight:** Same person, different roles, different core values
+## The Ultimate Goal
 
-### Project: "What matters in this specific situation?"
+What Brain aims to achieve is this: teach Claude how you think.
 
-**Definition:** The constraints and priorities of the current context
-
-**Examples:**
-- Personal project: "Learning over shipping"
-- Client work: "Completeness over speed"
-- Prototype: "Speed over quality"
-
-**Key insight:** Even within the same role, priorities shift based on situation
-
-### Why Both?
-
-```
-Developer role + Personal project:
-"Try the experimental approach, learning matters more than stability"
-
-Developer role + Client project:
-"Use the proven approach, reliability matters more than learning"
-```
-
-The combination creates nuanced, context-appropriate decisions.
-
-## Evolution, Not Configuration
-
-Brain is not a static settings file. It's a **living system that evolves with you**.
-
-### Traditional Systems
-
-```
-1. Set preferences upfront
-2. Use system
-3. Preferences stay fixed
-```
-
-### Brain
-
-```
-1. Start with minimal values (or none)
-2. Have conversations
-3. Capture meaningful decisions
-4. Discover patterns
-5. Elevate to principles
-6. Repeat → System grows with you
-```
-
-**Why this matters:**
-- Your principles change as you gain experience
-- You discover new principles through new situations
-- The system reflects your current thinking, not past assumptions
-
-## User Approval: A Conscious Choice
-
-Brain never auto-updates your values or rules. You must review and approve changes.
-
-**Why?**
-
-This isn't just a safety mechanism—it's a **metacognitive process**.
-
-When Brain suggests:
-> "You've prioritized practicality over perfection in 3 recent decisions.
-> Add this to your Developer values?"
-
-You're forced to:
-1. Recognize the pattern consciously
-2. Decide if it's truly your principle
-3. Own the decision explicitly
-
-This moment of conscious recognition **strengthens your self-awareness**. The act of approval transforms an unconscious habit into a deliberate principle.
-
-## The Goal: Replicate Your Decision-Making DNA
-
-Brain's ultimate aim is to teach Claude **how you think**.
-
-Not just what you prefer, but:
+Not just what you prefer, but your entire decision-making framework:
 - How you weigh trade-offs
 - What you prioritize in different contexts
-- How you approach uncertainty
 - What patterns guide your choices
+- Which values you're willing to compromise and which ones you're not
 
-Over time, with enough captured decisions and evolved principles, Claude should be able to:
+With enough captured decisions and evolved principles, Claude should be able to make decisions aligned with your specific way of thinking—without you having to explain your preferences each time.
 
-**Predict your thinking:**
-"Given your Developer values and this project's constraints, you'd probably choose X because Y."
+It's not about giving Claude a list of rules to follow. It's about replicating your decision-making DNA.
 
-**Explain in your terms:**
-"Based on your principle of 'practicality over perfection', let's ship with basic coverage."
+## Design Consequences
 
-**Make decisions you'd agree with:**
-Not generic advice, but decisions aligned with your specific decision-making framework.
+These philosophical choices led to specific design decisions:
 
-## Design Principles
+**Minimalism:** If capturing decisions feels burdensome, you won't do it. So Brain removes all unnecessary structure. Templates are minimal. Placeholders are removed. "All sections optional." Write only what matters.
 
-These philosophical insights led to specific design choices:
+**Language Neutrality:** Your principles feel different in your native language. Brain writes values and rules in the language you're speaking, preserving the natural expression of your thoughts.
 
-### 1. Minimalism
+**Conservative Merging:** When Brain finds patterns, it has to judge: is "Ship fast" the same as "Ship working code fast"? They're similar, but are they identical? Only you can decide. So Brain detects obvious duplicates automatically but asks you to judge similarities.
 
-**Philosophy:** Lower the barrier to capturing insights.
+**Logs as Primary Data:** Abstract principles lack context. "Practicality over perfection" means different things in different situations. Logs capture decisions with their full context—what situation you faced, what options you considered, what you chose, what you gave up. Principles are extracted FROM logs, not written in isolation. Context matters.
 
-**Implementation:**
-- Templates are minimal
-- Placeholders removed
-- "All sections optional"
-- Write only what matters
+## What Brain Is
 
-**Why:** If capturing decisions feels burdensome, you won't do it. Friction kills adoption.
+Brain is a system for converting tacit knowledge to explicit knowledge through practice.
 
-### 2. Language Neutrality
+It recognizes that:
+- You make decisions differently in different roles
+- Your principles are mostly unconscious
+- Conversations reveal your values better than introspection
+- Your decision-making framework should evolve as you grow
 
-**Philosophy:** Principles are most authentic in your native language.
+It helps you discover your own thinking patterns, make them explicit, and teach them to Claude.
 
-**Implementation:**
-- Write values/rules in conversation language
-- Templates in English, content in user's language
-- Preserves natural expression
-
-**Why:** Translating your inner principles loses nuance. "실용성" isn't quite "practicality."
-
-### 3. Conservative Merging
-
-**Philosophy:** Only obvious duplicates auto-merge; similarities need human judgment.
-
-**Implementation:**
-- AI detects clear duplicates
-- User decides on similar items
-- Never auto-modify without approval
-
-**Why:** Subtle differences in principles matter. "Ship fast" ≠ "Ship working code fast."
-
-### 4. Logs as Primary Data
-
-**Philosophy:** Decisions in context are richer than abstract principles.
-
-**Implementation:**
-- Capture decisions with situation/options/trade-offs
-- Principles extracted FROM logs
-- Logs remain source of truth
-
-**Why:** "Practicality over perfection" means different things in different situations. Context matters.
-
-## Summary
-
-Brain is based on four core beliefs:
-
-1. **Context shapes decisions**: You think differently as Developer vs. Founder, in personal vs. client projects
-2. **Principles are unconscious**: They emerge through action, not introspection
-3. **Discovery through dialogue**: Conversations reveal your values better than forced articulation
-4. **Evolution over configuration**: Your decision-making framework grows and changes with you
-
-The system creates a feedback loop:
-
-```
-Unconscious decisions → Captured patterns → Conscious principles → Better future decisions → New patterns...
-```
-
-The result: Claude that makes decisions the way you would, because it has learned your decision-making DNA.
-
----
-
-This is not a preference storage system. It's a **self-discovery and decision-making replication system**.
+The result is Claude that makes decisions aligned with your specific way of thinking—because it has learned your decision-making DNA.
