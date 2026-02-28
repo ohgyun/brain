@@ -1,12 +1,22 @@
-# {Project Name} Rules
-
-Rules applied when making decisions in this project.
+# {Project Name}
 
 > Write only the sections you need. All sections are optional.
 
 ---
 
-## Priorities
+## Context (Optional)
+
+{What this project is, why you're doing it}
+
+{Current state, stage, what you're working on}
+
+{Key constraints - technical, time, resource}
+
+---
+
+## Rules
+
+### Priorities
 
 1. **{Item}**
    {Why it matters, when it applies}
@@ -14,8 +24,6 @@ Rules applied when making decisions in this project.
 2. **{Item}**
    {Description}
 
----
-
-## Constraints/Prohibitions
+### Constraints/Prohibitions
 
 - **{Constraint}**: {Reason}
