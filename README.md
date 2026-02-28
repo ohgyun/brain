@@ -8,7 +8,7 @@ Whether you're writing code, novels, investment strategies, or lesson plans, Bra
 
 ## What is Brain?
 
-Most of your decision-making principles are unconscious. You don't explicitly think "I'm applying my pragmatist principle." You just naturally choose to ship with basic tests instead of comprehensive coverage, or send a quick draft for feedback rather than perfecting it alone. The principle exists in your actions, not your awareness.
+Most of your decision-making principles are unconscious. You don't explicitly think "I'm applying my pragmatist principle." You just naturally choose to send a quick draft for feedback rather than perfecting it alone, or get started with what works rather than planning everything upfront. The principle exists in your actions, not your awareness.
 
 Brain captures these patterns from your conversations and helps Claude learn how you think. Your principles vary by role and context—the same you makes different decisions as a Developer on a production app versus a hackathon, or as a Writer working on different genres.
 

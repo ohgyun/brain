@@ -34,7 +34,7 @@ That's why Brain has two layers: **Role** (who you are) and **Project** (what ma
 
 Here's the challenge: most of your decision-making principles are tacit knowledge.
 
-You don't consciously think "I'm applying my pragmatist principle now." You just naturally choose to ship with basic tests instead of comprehensive coverage. The principle exists in your actions, not in your explicit awareness.
+You don't consciously think "I'm applying my pragmatist principle now." You just naturally choose to send a quick draft for feedback rather than perfecting it alone, or get started with what works rather than planning everything upfront. The principle exists in your actions, not in your explicit awareness.
 
 This creates a dilemma. Traditional systems ask you to articulate your values upfront. But that's asking you to make explicit what is inherently tacit. It's difficult, burdensome, and often incomplete.
 
@@ -46,9 +46,9 @@ When you choose option A over option B, there's a value judgment embedded in tha
 
 This led to Brain's core approach: instead of asking users to declare their principles upfront, help them discover principles through practice.
 
-The mechanism is conversations. Every conversation where you make decisions contains your principles in action. When you say "No, let's ship with basic tests first," you're revealing something about what you value.
+The mechanism is conversations. Every conversation where you make decisions contains your principles in action. When you say "No, let's get this working first and iterate," you're revealing something about what you value.
 
-Brain captures these decisions in logs. Over time, patterns accumulate. Then it analyzes these patterns and says: "You've prioritized shipping over perfection three times in similar situations. Is this a principle worth making explicit?"
+Brain captures these decisions in logs. Over time, patterns accumulate. Then it analyzes these patterns and says: "You've prioritized action over perfection three times in similar situations. Is this a principle worth making explicit?"
 
 This follows a natural learning process:
 1. You act based on unconscious principles
@@ -111,7 +111,7 @@ These philosophical choices led to specific design decisions:
 
 **Language Neutrality:** Your principles feel different in your native language. Brain writes values and rules in the language you're speaking, preserving the natural expression of your thoughts.
 
-**Conservative Merging:** When Brain finds patterns, it has to judge: is "Ship fast" the same as "Ship working code fast"? They're similar, but are they identical? Only you can decide. So Brain detects obvious duplicates automatically but asks you to judge similarities.
+**Conservative Merging:** When Brain finds patterns, it has to judge: is "Act quickly" the same as "Act quickly but carefully"? They're similar, but are they identical? Only you can decide. So Brain detects obvious duplicates automatically but asks you to judge similarities.
 
 **Logs as Primary Data:** Abstract principles lack context. "Practicality over perfection" means different things in different situations. Logs capture decisions with their full context—what situation you faced, what options you considered, what you chose, what you gave up. Principles are extracted FROM logs, not written in isolation. Context matters.
 
