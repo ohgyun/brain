@@ -1,0 +1,16 @@
+{
+  "name": "brain",
+  "owner": {
+    "name": "ohgyun",
+    "url": "https://github.com/ohgyun"
+  },
+  "description": "Brain - Role-based decision making system for Claude",
+  "plugins": [
+    {
+      "name": "brain",
+      "source": "./plugins/brain",
+      "description": "Role-based decision making system that helps Claude make decisions aligned with your values and project rules",
+      "version": "1.0.0"
+    }
+  ]
+}

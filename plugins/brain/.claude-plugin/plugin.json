@@ -1,0 +1,13 @@
+{
+  "name": "brain",
+  "version": "1.0.0",
+  "description": "Role-based decision making system for Claude",
+  "author": {
+    "name": "ohgyun",
+    "url": "https://github.com/ohgyun"
+  },
+  "homepage": "https://github.com/ohgyun/brain",
+  "repository": "https://github.com/ohgyun/brain",
+  "license": "MIT",
+  "keywords": ["decision-making", "role", "context", "agent"]
+}
