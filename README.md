@@ -8,28 +8,11 @@ Whether you're writing code, novels, investment strategies, or lesson plans, Bra
 
 ## What is Brain?
 
-Most of your decision-making principles are unconscious. You don't explicitly think "I'm applying my pragmatist principle." You just naturally choose to send a quick draft for feedback rather than perfecting it alone. The principle exists in your actions, not your awareness.
+Most of your decision-making principles are unconscious. You don't explicitly think "I'm applying my pragmatist principle." You just naturally choose to ship with basic tests instead of comprehensive coverage, or send a quick draft for feedback rather than perfecting it alone. The principle exists in your actions, not your awareness.
 
-Brain captures these patterns from your conversations and helps Claude learn how you think:
+Brain captures these patterns from your conversations and helps Claude learn how you think. Your principles vary by role and context—the same you makes different decisions as a Developer on a production app versus a hackathon, or as a Writer working on different genres.
 
-**Different roles, different values**
-- As a Developer: "Working code over perfect architecture"
-- As a Writer: "Show, don't tell"
-- As an Investor: "Compound growth over quick wins"
-- As a Manager: "Team growth over immediate results"
-
-**Different contexts, different priorities**
-- Production app: "Stability and proven patterns"
-- Hackathon project: "Speed and experimentation"
-- Fantasy novel: "World-building depth"
-- Historical novel: "Research accuracy"
-- Main portfolio: "Risk-managed diversification"
-- Experimental account: "Learning through trial"
-
-**Over time**
-- Your principles evolve as you grow
-- Brain analyzes recent patterns (not your entire history)
-- Focuses on who you are now, not who you were
+Your principles also evolve over time. Brain analyzes recent patterns (not your entire history), focusing on who you are now, not who you were.
 
 You don't configure values upfront. They emerge through practice, then Brain helps you recognize and formalize them.
 

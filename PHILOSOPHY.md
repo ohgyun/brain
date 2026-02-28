@@ -1,5 +1,23 @@
 # Brain Philosophy
 
+## What Brain Is
+
+Brain is a system for converting tacit knowledge to explicit knowledge through practice.
+
+It recognizes that:
+- You make decisions differently in different roles
+- Your principles are mostly unconscious
+- Conversations reveal your values better than introspection
+- Your decision-making framework should evolve as you grow
+
+It helps you discover your own thinking patterns, make them explicit, and teach them to Claude.
+
+The result is Claude that makes decisions aligned with your specific way of thinking—because it has learned your decision-making DNA.
+
+---
+
+This document explains the thinking behind this design.
+
 ## Core Assumptions
 
 When I designed Brain, I started with a few observations about how people make decisions.
@@ -142,16 +160,10 @@ The system is domain-agnostic. Whatever you decide about—code, stories, invest
 
 This is why Brain doesn't prescribe what "good" decisions look like. It learns what YOUR good decisions look like, in each context you operate in.
 
-## What Brain Is
+## Summary
 
-Brain is a system for converting tacit knowledge to explicit knowledge through practice.
+Brain doesn't ask you to declare your principles upfront. Instead, it helps you discover them through practice—by capturing decisions from conversations, recognizing patterns in those decisions, and offering to make those patterns explicit with your approval.
 
-It recognizes that:
-- You make decisions differently in different roles
-- Your principles are mostly unconscious
-- Conversations reveal your values better than introspection
-- Your decision-making framework should evolve as you grow
+This approach respects that your decision-making principles are mostly unconscious, that they vary by role and context, and that they evolve over time. The system grows with you, continuously learning how you think across all aspects of your life—whether you're writing code, novels, investment strategies, or making decisions as a parent, teacher, or leader.
 
-It helps you discover your own thinking patterns, make them explicit, and teach them to Claude.
-
-The result is Claude that makes decisions aligned with your specific way of thinking—because it has learned your decision-making DNA.
+The goal is simple: teach Claude your decision-making DNA, so it can make choices aligned with how YOU think.
