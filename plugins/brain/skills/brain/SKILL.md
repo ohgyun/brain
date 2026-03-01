@@ -92,6 +92,25 @@ When multiple Roles are selected:
 - Each Role applies to decisions within its domain
 - Example: Developer (code) + Founder (product decisions)
 
+## Name Normalization
+
+Role and Project names are used as directory names and identifiers, so they must be normalized:
+- English letters and numbers only (no non-ASCII characters)
+- Lowercase only
+- Spaces, underscores, and other separators → `-`
+- Remove any remaining characters that are not letters, numbers, or `-`
+- Examples: `My Project` → `my-project`, `Dev_Role` → `dev-role`, `개발자` → ask user for an English name
+
+If the user provides a non-English name, ask them to provide an English equivalent.
+
+Apply the normalized name to both:
+- Directory name: `~/.brain/roles/{normalized-name}/`
+- File title: `# {normalized-name}` inside `values.md` or `rules.md`
+
+This ensures consistent lookup without needing to read file contents to resolve the display name.
+
+All other content (values, rules, descriptions) should be written in the language of the current conversation.
+
 ## File Creation Rules
 
 When creating Role or Project files:
