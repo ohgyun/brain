@@ -23,8 +23,15 @@ You don't configure values upfront. They emerge through practice, then Brain hel
 **Install the plugin:**
 
 ```bash
+# Claude Code
 claude plugin marketplace add ohgyun/brain
 claude plugin install brain
+```
+
+Or install via [skills.sh](https://skills.sh) for other agents (Cursor, Copilot, etc.):
+
+```bash
+npx skills add ohgyun/brain
 ```
 
 **Using Brain:**
