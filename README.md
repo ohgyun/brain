@@ -53,12 +53,21 @@ When you're done with the conversation:
 
 That's the workflow: `/brain` when you start, `/brain-reflect` when you finish.
 
+To back up your data to GitHub:
+
+```bash
+/brain-sync
+# First time: Initializes git in ~/.brain and sets up a remote repository
+# Subsequent times: Pulls remote changes, commits local changes, and pushes
+```
+
 ## Commands
 
 | Command | When to use | What it does |
 |---------|-------------|--------------|
 | `/brain` | Start of conversation | Load your Role and Project context into Claude |
 | `/brain-reflect` | End of conversation | Save log and discover patterns from recent decisions |
+| `/brain-sync` | Anytime | Sync your ~/.brain data to GitHub |
 
 ## How Your Data is Stored
 
