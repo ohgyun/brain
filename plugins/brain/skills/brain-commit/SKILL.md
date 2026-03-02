@@ -1,10 +1,10 @@
 ---
-name: brain-reflect
-description: End session - Save log and discover patterns for evolution
+name: brain-commit
+description: Commit session learnings to Brain
 user-invocable: true
 ---
 
-# Brain Session Reflection
+# Brain Session Commit
 
 Reflect on the current conversation to capture decisions and discover patterns.
 
@@ -163,7 +163,7 @@ Confirm: "Updated {role/project} with {N} new principles"
 ```
 /brain          - Start session
 [work on tasks]
-/brain-reflect  - End session
+/brain-commit  - End session
   → Log saved
   → Patterns analyzed (last 15 logs)
   → If found: "Would you like to update?"

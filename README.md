@@ -52,13 +52,13 @@ Work on your task. Have conversations. Make decisions naturally.
 When you're done with the conversation:
 
 ```bash
-/brain-reflect
+/brain-commit
 # Saves meaningful decisions as a log
 # Analyzes your recent logs for patterns
 # If patterns found: Asks if you want to update your values/rules
 ```
 
-That's the workflow: `/brain` when you start, `/brain-reflect` when you finish.
+That's the workflow: `/brain` when you start, `/brain-commit` when you finish.
 
 To back up your data to GitHub:
 
@@ -73,7 +73,7 @@ To back up your data to GitHub:
 | Command | When to use | What it does |
 |---------|-------------|--------------|
 | `/brain` | Start of conversation | Load your Role and Project context into Claude |
-| `/brain-reflect` | End of conversation | Save log and discover patterns from recent decisions |
+| `/brain-commit` | End of conversation | Save log and discover patterns from recent decisions |
 | `/brain-sync` | Anytime | Sync your ~/.brain data to GitHub |
 
 ## How Your Data is Stored

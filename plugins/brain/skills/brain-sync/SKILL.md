@@ -129,5 +129,5 @@ Remote: https://github.com/ohgyun/brain-data
 ## Notes
 
 - **Private repository recommended**: Your Brain data contains personal principles and decisions
-- **Frequency**: Run `/brain-sync` anytime — after `/brain-reflect` is a natural moment
+- **Frequency**: Run `/brain-sync` anytime — after `/brain-commit` is a natural moment
 - **No automatic sync**: Sync is always intentional, triggered by you
