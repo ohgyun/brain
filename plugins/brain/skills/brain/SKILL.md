@@ -23,9 +23,10 @@ If a session is already active:
 
 ### 2. Check Brain Data Existence
 
-Check if `~/.brain/` directory exists:
-- If not exists: Create directory and proceed to initial setup
-- If exists: Check for roles and projects
+Use the `Glob` tool to check if `~/.brain/` exists:
+- Pattern: `~/.brain/**`
+- If no matches: Run `mkdir -p ~/.brain` and proceed to initial setup
+- If matches found: check for roles and projects
 
 ### 3. Handle Missing Data
 
